@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ClockLock"
+    android:paddingBottom="16dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mola.molamolaclock.ClockFragment"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="25dp"
+            android:id="@+id/yearAndMonth"
+            android:text="2017年6月7日"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="星期五"
+            android:id="@+id/day"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="360dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/clock2"
+            android:id="@+id/imageViewLock" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/miao2"
+            android:id="@+id/secondLock" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/min_2"
+            android:id="@+id/minLock" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/hour2"
+            android:id="@+id/hourLock" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="88:88:88"
+            android:textSize="50dp"
+            android:background="@drawable/line"
+            android:textColor="#1b05250f"
+            android:gravity="center"
+            android:id="@+id/deftextViewLock" />
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="20:57:40"
+            android:textSize="50dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:id="@+id/textViewLock" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clockHead"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mola.molamolaclock.Clock"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:id="@+id/ClockTextView"
+            android:text=" Clock  "
+            android:textColor="@color/gray"
+            android:textSize="43dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0.8dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="#999999"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Alarm "
+            android:id="@+id/AlarmTextView"
+            android:textColor="@color/gray"
+            android:textSize="43dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:scaleType="matrix"
+        android:src="#ffffff" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+</LinearLayout>
+
